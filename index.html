@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Gerenciamento Masanielo Calculator</title>
+</head>
+<body>
+<div class="container">
+  <h1>Gerenciamento Masanielo Calculator</h1>
+  <form id="calculator-form">
+    <label for="capital">Capital Invested:</label>
+    <input type="number" id="capital" name="capital" required>
+    <label for="operations">Number of Operations:</label>
+    <input type="number" id="operations" name="operations" required>
+    <label for="wins">Number of Win Operations:</label>
+    <input type="number" id="wins" name="wins" required>
+    <label for="payout">Payout:</label>
+    <input type="number" step="0.01" id="payout" name="payout" required>
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="result" class="hidden">
+    <h2>Results</h2>
+    <p>Total Expected Profit: <span id="expected-profit"></span></p>
+    <p>Percentage Expected Profit: <span id="percentage-profit"></span>%</p>
+    <h2>Entry Amounts:</h2>
+    <ul id="entry-amounts"></ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
